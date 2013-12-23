@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TipCalculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Calculate_Tip_BTN">Calculate Tip</string>
+    <string name="enter_prompt_billamt">Enter the bill amount</string>
+    <string name="enter_prompt_tippct">Enter tip %</string>
+    <string name="tip_amount_label"></string>
+    <string name="pctSignLabel">%</string>
+    <string name="tenPctLabel">10% Tip</string>
+    <string name="fifteenPctTip">15% Tip</string>
+    <string name="otherTipPct">Other tip %</string>
+    <string name="twentyTipPctLabel">20% Tip</string>
+    <string name="tenPctTipAmtLabel"></string>
+    <string name="fifteenPctTipAmt"></string>
+    <string name="twentyPctTipAmount"></string>
+    <string name="tenPctRadioButton"></string>
+    <string name="tenPctTipRadioBtn">10% Tip</string>
+    <string name="fifteenPctTipRadioBtn">15% Tip</string>
+    <string name="twentyPctTipRadioBtn">20% Tip</string>
+    <string name="tenPercentTipLabel">10% Tip</string>
+    <string name="tenPercentTipAmount"></string>
+    <string name="tenPercentTipTotal"></string>
+    <string name="fifteenPercentTipLabel">15% Tip</string>
+    <string name="fifteenPercentTipAmountLabel"></string>
+    <string name="fifteenPercentTipTotalLabel"></string>
+    <string name="tipAmountLabel">Tip</string>
+    <string name="billTotalAmountLabel">Total</string>
+    <string name="twentyPercentTipLabel">20% Tip</string>
+    <string name="twentyPercentTipAmountLabel"></string>
+    <string name="twentyPercentTipTotalLabel"></string>
+    <string name="customTipTotalLabel"></string>
+    <string name="customTipPercentLabel"></string>
+
+</resources>

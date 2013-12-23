@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Tip" >
+
+    <TextView
+        android:id="@+id/pctSignLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_tipPercent"
+        android:layout_toRightOf="@+id/et_tipPercent"
+        android:text="@string/pctSignLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_tenPercentTipAmountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_tenPercentTipLabel"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tenPercentTipAmount"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_tenPercentTipTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_tenPercentTipAmountLabel"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/tv_tenPercentTipAmountLabel"
+        android:text="@string/tenPercentTipTotal"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_fifteenPercentTipAmountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_fifteenPercentTipLabel"
+        android:layout_centerHorizontal="true"
+        android:text="@string/fifteenPercentTipAmountLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_fifteenPercentTipTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_fifteenPercentTipAmountLabel"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/tv_fifteenPercentTipAmountLabel"
+        android:text="@string/fifteenPercentTipTotalLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_TotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_tenPercentTipTotalLabel"
+        android:layout_alignLeft="@+id/tv_tenPercentTipTotalLabel"
+        android:text="@string/billTotalAmountLabel"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tv_twentyPercentTipAmountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_twentyPercentTipLabel"
+        android:layout_alignBottom="@+id/tv_twentyPercentTipLabel"
+        android:layout_centerHorizontal="true"
+        android:text="@string/twentyPercentTipAmountLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_twentyPercentTipTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_twentyPercentTipAmountLabel"
+        android:layout_alignLeft="@+id/tv_fifteenPercentTipTotalLabel"
+        android:text="@string/twentyPercentTipTotalLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_fifteenPercentTipLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_twentyPercentTipLabel"
+        android:layout_below="@+id/tv_tenPercentTipLabel"
+        android:layout_marginTop="14dp"
+        android:text="@string/fifteenPercentTipLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_tenPercentTipLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_fifteenPercentTipLabel"
+        android:layout_below="@+id/et_txt_billAmount"
+        android:layout_marginTop="44dp"
+        android:text="@string/tenPercentTipLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_tipPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_txt_billAmount"
+        android:layout_below="@+id/tv_twentyPercentTipAmountLabel"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/otherTipPct"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tv_tipAmountDummyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_tenPercentTipAmountLabel"
+        android:layout_toLeftOf="@+id/tv_tenPercentTipTotalLabel"
+        android:text="@string/tipAmountLabel"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/btn_calculatetip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_tipPercent"
+        android:layout_marginTop="39dp"
+        android:layout_toLeftOf="@+id/tv_tipAmountDummyLabel"
+        android:onClick="onSubmit"
+        android:text="@string/Calculate_Tip_BTN" />
+
+    <TextView
+        android:id="@+id/tv_twentyPercentTipLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_tipPercent"
+        android:layout_below="@+id/tv_fifteenPercentTipLabel"
+        android:layout_marginTop="19dp"
+        android:text="@string/twentyPercentTipLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_txt_billAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="41dp"
+        android:layout_toLeftOf="@+id/tv_TotalLabel"
+        android:ems="10"
+        android:hint="@string/enter_prompt_billamt"
+        android:imeOptions="actionSend"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_customTipPercentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_tipAmountLabel"
+        android:layout_alignLeft="@+id/et_tipPercent"
+        android:text="@string/customTipPercentLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_tipAmountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_twentyPercentTipAmountLabel"
+        android:layout_alignTop="@+id/tv_customTipTotalLabel"
+        android:text="@string/tip_amount_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_customTipTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_twentyPercentTipTotalLabel"
+        android:layout_below="@+id/btn_calculatetip"
+        android:text="@string/customTipTotalLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
